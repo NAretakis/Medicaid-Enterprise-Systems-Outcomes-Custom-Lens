@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "2021-11-01",
+  "name": "Medicaid Enterprise Systems Outcomes Custom Lens",
+  "description": "Replace with custom lens description",
+  "pillars": [
+    {
+      "id": "pillar_id_1",
+      "name": "Claims Processing",
+      "questions": [
+        {
+          "id": "pillar_1_q1",
+          "title": "CP1 Receipt and Ingestion",
+          "description": "The system receives, ingests, and retains claims, claims adjustments, and supporting documentation submitted both electronically and by paper in standard formats.",
+          "choices": [
+            {
+              "id": "choice1",
+              "title": "Yes, this system capability exists.",
+              "helpfulResource": {
+                "displayText": "Replace with capability description",
+                "url": "https://cmsgov.github.io/CMCS-DSG-DSS-Certification/Outcomes%20and%20Metrics/Claims%20Processing/"
+              },
+              "improvementPlan": {
+                "displayText": "Replace with capability improvement plan",
+                "url": "https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
+              }
+            },
+            {
+              "id": "choice2",
+              "title": "Supporting metrics are reportable.",
+              "helpfulResource": {
+                "displayText": "Replace with support default metrics",
+                "url": "https://cmsgov.github.io/CMCS-DSG-DSS-Certification/Ongoing%20Reporting/"
+              },
+              "improvementPlan": {
+                "displayText": "Replace with metrics improvement plan.",
+                 "url":"https://aws.amazon.com/quicksight"
+              }
+            },
+            {
+              "id": "choice3_no",
+              "title": "None of these",
+              "helpfulResource": {
+                "displayText": "If neither the capability nor metrics exist."
+              }
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "choice3_no",
+              "risk": "HIGH_RISK"   
+            },
+            {
+              "condition": "choice1 && choice2",
+              "risk": "NO_RISK"
+            },
+            {
+              "condition": "choice1 || choice2",
+              "risk": "MEDIUM_RISK"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
