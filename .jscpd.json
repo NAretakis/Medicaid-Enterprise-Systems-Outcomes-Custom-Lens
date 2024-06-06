@@ -1,3 +1,5 @@
 {
   "threshold": 100,
+  "reporters": ["json"],
+  "absolute": true
 }
