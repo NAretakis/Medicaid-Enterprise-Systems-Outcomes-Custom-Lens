@@ -61,7 +61,7 @@
         },
         {
           "id": "pillar_1_q2",
-          "title": "Claims Processing Validation (CP2))",
+          "title": "Claims Processing Validation (CP2)",
           "description": "The system performs comprehensive validation of claims and claims adjustments, including validity of services.",
           "choices": [
             {
