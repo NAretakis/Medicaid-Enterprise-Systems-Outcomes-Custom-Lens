@@ -1,7 +1,5 @@
 {
   "schemaVersion": "2021-11-01",
-  "name": "Medicaid Enterprise Systems Claims Processing Custom Lens",
-  "description": "Claims processing systems cover the ingestion and validation of claims against rules. These systems may also generate reports to support Federal reporting requirements.",
   "pillars": [
     {
       "id": "pillar_id_1",
@@ -28,12 +26,12 @@
               "id": "choice2",
               "title": "Supporting metrics are reportable.",
               "helpfulResource": {
-                "displayText": "Default metrics for this outcome are:<br>- Count/percentage of claims received by submission channel (paper vs. electronic).<br>- Median processing time for ingestion of non-electronic claims/documentation (from receipt to correct ingestion of/association with the associated claims record).<br>See the link below for CMS ongoing reporting requirements.",
+                "displayText": "Default metrics for this outcome are:\n  - Count/percentage of claims received by submission channel (paper vs. electronic).\n  - Median processing time for ingestion of non-electronic claims/documentation (from receipt to correct ingestion of/association with the associated claims record).\n\nSee the link below for additional details.",
                 "url": "https://cmsgov.github.io/CMCS-DSG-DSS-Certification/Ongoing%20Reporting/"
               },
               "improvementPlan": {
                 "displayText": "If metrics are not reportable for this outcome, consider contacting the the AWS Medicaid team for help building a solution.",
-                 "url":"https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
+                "url": "https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
               }
             },
             {
@@ -47,7 +45,7 @@
           "riskRules": [
             {
               "condition": "choice3_no",
-              "risk": "HIGH_RISK"   
+              "risk": "HIGH_RISK"
             },
             {
               "condition": "choice1 && choice2",
@@ -80,12 +78,12 @@
               "id": "choice2",
               "title": "Supporting metrics are reportable.",
               "helpfulResource": {
-                "displayText": "Default metrics for this outcome are:<br>- Count/percentage of claims/claims adjustments accepted/suspended/rejected for processing.<br>See the link below for CMS ongoing reporting requirements.",
+                "displayText": "Default metrics for this outcome are:\n  - Count/percentage of claims/claims adjustments accepted/suspended/rejected for processing.\n\nSee the link below additional details.",
                 "url": "https://cmsgov.github.io/CMCS-DSG-DSS-Certification/Ongoing%20Reporting/"
               },
               "improvementPlan": {
                 "displayText": "If metrics are not reportable for this outcome, consider contacting the the AWS Medicaid team for help building a solution.",
-                 "url":"https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
+                "url": "https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
               }
             },
             {
@@ -99,7 +97,7 @@
           "riskRules": [
             {
               "condition": "choice3_no",
-              "risk": "HIGH_RISK"   
+              "risk": "HIGH_RISK"
             },
             {
               "condition": "choice1 && choice2",
@@ -113,5 +111,7 @@
         }
       ]
     }
-  ]
+  ],
+  "name": "Medicaid Enterprise Systems Claims Processing Custom Lens",
+  "description": "Claims processing systems cover the ingestion and validation of claims against rules. These systems may also generate reports to support Federal reporting requirements."
 }
