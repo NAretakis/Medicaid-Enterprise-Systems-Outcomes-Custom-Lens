@@ -42,7 +42,23 @@
               "helpfulResource": {
                 "displayText": "Select this option if the system has neither the capability nor associated metrics."
               }
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "choice3_no",
+              "risk": "HIGH_RISK"   
             },
+            {
+              "condition": "choice1 && choice2",
+              "risk": "NO_RISK"
+            },
+            {
+              "condition": "choice1 || choice2",
+              "risk": "MEDIUM_RISK"
+            }
+          ]
+        },
         {
           "id": "pillar_1_q1",
           "title": "CP2 Validation",
