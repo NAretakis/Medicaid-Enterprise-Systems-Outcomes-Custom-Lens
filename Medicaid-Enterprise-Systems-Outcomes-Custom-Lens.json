@@ -33,7 +33,7 @@
               },
               "improvementPlan": {
                 "displayText": "If metrics are not reportable for this outcome, consider contacting the the AWS Medicaid team for help building a solution.",
-                "url": "https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
+                 "url":"https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
               }
             },
             {
@@ -47,7 +47,7 @@
           "riskRules": [
             {
               "condition": "choice3_no",
-              "risk": "HIGH_RISK"
+              "risk": "HIGH_RISK"   
             },
             {
               "condition": "choice1 && choice2",
@@ -85,7 +85,7 @@
               },
               "improvementPlan": {
                 "displayText": "If metrics are not reportable for this outcome, consider contacting the the AWS Medicaid team for help building a solution.",
-                "url": "https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
+                 "url":"https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
               }
             },
             {
@@ -99,7 +99,7 @@
           "riskRules": [
             {
               "condition": "choice3_no",
-              "risk": "HIGH_RISK"
+              "risk": "HIGH_RISK"   
             },
             {
               "condition": "choice1 && choice2",
@@ -113,7 +113,5 @@
         }
       ]
     }
-  ],
-  "name": "Medicaid Enterprise Systems Claims Processing Custom Lens",
-  "description": "Claims processing systems cover the ingestion and validation of claims against rules. These systems may also generate reports to support Federal reporting requirements."
+  ]
 }
