@@ -1,5 +1,7 @@
 {
   "schemaVersion": "2021-11-01",
+  "name": "Medicaid Enterprise Systems Claims Processing Custom Lens",
+  "description": "Claims processing systems cover the ingestion and validation of claims against rules. These systems may also generate reports to support Federal reporting requirements.",
   "pillars": [
     {
       "id": "pillar_id_1",
