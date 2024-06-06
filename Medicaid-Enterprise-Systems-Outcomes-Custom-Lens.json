@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2021-11-01",
-  "name": "Medicaid Enterprise Systems Outcomes Custom Lens",
-  "description": "Replace with custom lens description",
+  "name": "Medicaid Enterprise Systems Claims Processing Custom Lens",
+  "description": "Claims processing systems cover the ingestion and validation of claims against rules. These systems may also generate reports to support Federal reporting requirements.",
   "pillars": [
     {
       "id": "pillar_id_1",
@@ -9,7 +9,7 @@
       "questions": [
         {
           "id": "pillar_1_q1",
-          "title": "CP1 Receipt and Ingestion",
+          "title": "Claims Processing Receipt and Ingestion (CP1)",
           "description": "The system receives, ingests, and retains claims, claims adjustments, and supporting documentation submitted both electronically and by paper in standard formats.",
           "choices": [
             {
@@ -61,7 +61,7 @@
         },
         {
           "id": "pillar_1_q2",
-          "title": "CP2 Validation",
+          "title": "Claims Processing Validation (CP2)",
           "description": "The system performs comprehensive validation of claims and claims adjustments, including validity of services.",
           "choices": [
             {
