@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2021-11-01",
-  "name": "Medicaid Enterprise Systems Outcomes Custom Lens",
-  "description": "Replace with custom lens description",
+  "name": "Medicaid Enterprise Systems Claims Processing Custom Lens",
+  "description": "Claims processing systems cover the ingestion and validation of claims against rules. These systems may also generate reports to support Federal reporting requirements.",
   "pillars": [
     {
       "id": "pillar_id_1",
@@ -9,18 +9,18 @@
       "questions": [
         {
           "id": "pillar_1_q1",
-          "title": "CP1 Receipt and Ingestion",
+          "title": "Claims Processing Receipt and Ingestion (CP1)",
           "description": "The system receives, ingests, and retains claims, claims adjustments, and supporting documentation submitted both electronically and by paper in standard formats.",
           "choices": [
             {
               "id": "choice1",
               "title": "Yes, this system capability exists.",
               "helpfulResource": {
-                "displayText": "Replace with capability description",
+                "displayText": "See the link below for more inforamation on this capability.",
                 "url": "https://cmsgov.github.io/CMCS-DSG-DSS-Certification/Outcomes%20and%20Metrics/Claims%20Processing/"
               },
               "improvementPlan": {
-                "displayText": "Replace with capability improvement plan",
+                "displayText": "If this system capability does not exist, consider contacting the the AWS Medicaid team for help building a solution.",
                 "url": "https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
               }
             },
@@ -28,19 +28,71 @@
               "id": "choice2",
               "title": "Supporting metrics are reportable.",
               "helpfulResource": {
-                "displayText": "Replace with support default metrics",
+                "displayText": "Default metrics for this outcome are:\n  - Count/percentage of claims received by submission channel (paper vs. electronic).\n  - Median processing time for ingestion of non-electronic claims/documentation (from receipt to correct ingestion of/association with the associated claims record).\n\nSee the link below for additional details.",
                 "url": "https://cmsgov.github.io/CMCS-DSG-DSS-Certification/Ongoing%20Reporting/"
               },
               "improvementPlan": {
-                "displayText": "Replace with metrics improvement plan.",
-                 "url":"https://aws.amazon.com/quicksight"
+                "displayText": "If metrics are not reportable for this outcome, consider contacting the the AWS Medicaid team for help building a solution.",
+                 "url":"https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
               }
             },
             {
               "id": "choice3_no",
               "title": "None of these",
               "helpfulResource": {
-                "displayText": "If neither the capability nor metrics exist."
+                "displayText": "Select this option if the system has neither the capability nor associated metrics."
+              }
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "choice3_no",
+              "risk": "HIGH_RISK"   
+            },
+            {
+              "condition": "choice1 && choice2",
+              "risk": "NO_RISK"
+            },
+            {
+              "condition": "choice1 || choice2",
+              "risk": "MEDIUM_RISK"
+            }
+          ]
+        },
+        {
+          "id": "pillar_1_q2",
+          "title": "Claims Processing Validation (CP2)",
+          "description": "The system performs comprehensive validation of claims and claims adjustments, including validity of services.",
+          "choices": [
+            {
+              "id": "choice1",
+              "title": "Yes, this system capability exists.",
+              "helpfulResource": {
+                "displayText": "See the link below for more inforamation on this capability.",
+                "url": "https://cmsgov.github.io/CMCS-DSG-DSS-Certification/Outcomes%20and%20Metrics/Claims%20Processing/"
+              },
+              "improvementPlan": {
+                "displayText": "If this system capability does not exist, consider contacting the the AWS Medicaid team for help building a solution.",
+                "url": "https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
+              }
+            },
+            {
+              "id": "choice2",
+              "title": "Supporting metrics are reportable.",
+              "helpfulResource": {
+                "displayText": "Default metrics for this outcome are:\n  - Count/percentage of claims/claims adjustments accepted/suspended/rejected for processing.\n\nSee the link below additional details.",
+                "url": "https://cmsgov.github.io/CMCS-DSG-DSS-Certification/Ongoing%20Reporting/"
+              },
+              "improvementPlan": {
+                "displayText": "If metrics are not reportable for this outcome, consider contacting the the AWS Medicaid team for help building a solution.",
+                 "url":"https://aws.amazon.com/stateandlocal/health-and-human-services/cloud-resources/#medicaid"
+              }
+            },
+            {
+              "id": "choice3_no",
+              "title": "None of these",
+              "helpfulResource": {
+                "displayText": "Select this option if the system has neither the capability nor associated metrics."
               }
             }
           ],
